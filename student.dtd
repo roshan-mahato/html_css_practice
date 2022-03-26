@@ -1,0 +1,7 @@
+<!ELEMENT students (student)+>
+<!ELEMENT student (name,subject,age,address)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST student id CDATA #REQUIRED>

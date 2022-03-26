@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no" ?>
+<?xml-stylesheet type="text/xsl" href="student."?>
+<!DOCTYPE students SYSTEM "student.dtd">
+<students 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="student.xsd">
+	<student id="1">
+		<name>Roshan Mahato</name>
+		<subject>Maths</subject>
+		<age>23</age>
+		<address>Ratnanagar</address>
+	</student>
+	<student id="2">
+		<name>Ram Sharma</name>
+		<subject>Humanities</subject>
+		<age>25</age>
+		<address>Bharatpur</address>
+	</student>
+	<student id="3">
+		<name>Binisha thapa</name>
+		<subject>Sociology</subject>
+		<age>20</age>
+		<address>Pokhara</address>
+	</student>
+</students>

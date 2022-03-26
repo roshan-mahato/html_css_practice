@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script>
+
+    $(document).ready(function(){
+        $("#submit").on("click", function(){
+        var a = parseInt($('#a').val());
+        var b = parseInt($('#b').val());
+        var sum = a + b;
+        alert("Sum: "+sum);
+        })
+    })
+    </script>
+    </head>
+    <body>
+      First number: <input type="text" id="a" ><br>
+      Second number:  <input type="text" id="b" ><br>
+    <input id="submit" type="button" value="ADD">
+
+    </body>
+</html>

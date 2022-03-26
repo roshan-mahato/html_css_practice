@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#btn").click(function() {
+				var number = $("#num").val();
+
+				if (number % 2 == 0) {
+					res = "Even"
+				} else {
+					res = "Odd"
+				}	
+				alert(res);
+			});
+		});
+	</script>
+</head>
+
+<body>
+	Enter a number:
+	<input type="text" name="value" id="num"></input>
+	<input type="button" id="btn" value="check">
+	<p id="result"> </p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Error handling</title>
+	<script type="text/javascript">
+		function res(){
+			var a=document.getElementById("num").value;
+			try{
+				if (a == "") {alert("Empty")};
+				if (isNaN(a)) {alert("Is not number")};
+				a = Number(a);
+				if (a<5) {alert("Value is too low")};
+				if (a>10) {alert("Value is too high")};
+			}
+			catch (e){
+				alert("Error: "+e.description);
+			}
+		}
+	</script>
+</head>
+<body>
+<p>Enter values between 5 and 10: </p>
+<form>
+	<input type="text" id="num">
+	<input type="button" value="Result" onclick="res()">
+</form>
+</body>
+</html>

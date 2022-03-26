@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Control</title>
+	<script type="text/javascript">
+	function compare() {
+		var x = document.getElementById('num1')
+		var y = document.getElementById('num2')
+		var res = document.getElementById('res')
+		if (x.value>y.value) {
+			res.value =" Greater number: "+ x.value;
+		}
+		else
+		{
+			res.value = "Greater Number: "+y.value;
+		}
+	}
+</script>
+</head>
+<body>
+<form>
+	<label>First number: </label>
+	<input type="number" id="num1"><br>
+<label>Second number: </label>
+	<input type="number" id="num2"><br>
+	<label>Result: </label>
+	<input type="text" id="res">
+	<input type="button" id="chk" value="check" onclick="compare()">
+</form>
+
+</body>
+</html>

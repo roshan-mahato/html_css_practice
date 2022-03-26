@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media Query</title>
+	<style type="text/css">
+		.row::after{
+			content: "";
+			clear: both;
+			display: table;
+		}
+		[class*="col-"]{
+			float: left;
+			padding: 15px;
+		}
+		.header{
+			background-color: #9933cc;
+			color: #ffffff;
+			padding: 15px;
+		}
+		.menu ul
+		{
+			list-style: none;
+		}
+		.menu li{
+			padding: 8px;
+			background-color: #33b5e5;
+			color: #ffffff;
+		}
+		[class*="col-"]
+		{
+			width: 100%;
+		}
+		@media only screen and (min-width: 768px){
+  			.col-1 {width: 25%;}
+  			.col-2 {width: 50%;}
+		}
+	</style>
+</head>
+<body>
+<div class="header">
+	<h1>Media Query</h1>
+</div>
+<div class="row">
+	<div class="col-1 menu">
+		<ul>
+			<li>Food</li>
+			<li>Music</li>
+			<li>Video</li>
+		</ul>
+	</div>
+	<div class="col-2">
+		<h1>Sauraha</h1>
+		<p>Sauraha, is one of the village.It is one of the tourism place where you can find different mode of entertainment like restaurants, site-seeing, jungle walk/drive, boating, etc.</p>
+	</div>
+	<div class="col-1">
+		<h2>Where is Sauraha </h2>
+		<p>In Chitwan district</p><br>
+		<h2>How</h2>
+		<p>You can reach Sauraha by taking if you in chitwan district or by flight if outside</p>
+	</div>
+</div>
+</body>
+</html>
